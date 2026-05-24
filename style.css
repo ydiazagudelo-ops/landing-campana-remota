@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #497eba;
+    color: #5d90a6;
     line-height: 1.6;
 }
 
@@ -88,4 +88,23 @@ footer {
     padding: 15px;
     font-size: 0.9rem;
     margin-top: 40px;
+}
+
+/* Estilos para el nuevo botón de voluntario */
+#btn-voluntario {
+    background-color: #8b5cf6; /* Esto le pone un fondo azul brillante */
+    color: white;              /* El texto será de color blanco */
+    border: none;              /* Le quita el borde feo por defecto */
+    padding: 12px 24px;        /* Le da tamaño y espacio interno (Box Model) */
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;        /* Redondea un poquito las esquinas */
+    cursor: pointer;           /* Hace que aparezca la manito al pasar el mouse */
+    margin-top: 15px;          /* Lo separa un poco de los elementos de arriba */
+    transition: background 0.3s;
+}
+
+/* Cambio de color cuando pasas el mouse por encima (Hover) */
+#btn-voluntario:hover {
+    background-color: #1d4ed8; /* Se vuelve un azul más oscuro al pasar el mouse */
 }
