@@ -1,4 +1,6 @@
-# Landing Page - Campaña Política (Candidato X)
+# Landing-campana-v2
+
+## Actualización remota de prueba
 
 ## Descripción
 Este proyecto consiste en el desarrollo de una landing page funcional para una campaña política simulada. El objetivo es aplicar buenas prácticas de desarrollo web front-end y gestionar el ciclo de vida del código mediante el uso de Git.
