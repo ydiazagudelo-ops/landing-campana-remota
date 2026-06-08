@@ -1,0 +1,38 @@
+name: Validacion de Landing Page Politica
+
+# Se ejecuta en pushes y pull requests hacia la rama master
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  validar-estructura:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Clonar el código en el servidor virtual
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+
+      # 2. Verificar que exista el archivo index.html
+      - name: Validar archivo index.html
+        run: test -f index.html
+
+      # 3. Verificar que exista el archivo README.md
+      - name: Validar archivo README.md
+        run: test -f README.md
+
+      # 4. Verificar que exista style.css en la raíz (según tu captura de GitHub)
+      - name: Validar archivo style.css
+        run: test -f style.css
+
+      # 5. Verificar que exista script.js en la raíz (según tu captura de GitHub)
+      - name: Validar archivo script.js
+        run: test -f script.js
+
+      - name: Fin de la validacion
+        run: echo "¡La estructura mínima de la Landing Page es correcta!"
