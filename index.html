@@ -1,55 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page - Campaña Política</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./estilos/style.css" />
 </head>
+
 <body>
 
-    <header>
-<nav>
-        <a href="#sobre-mi">Sobre Mí</a> | 
-        <a href="#propuestas">Propuestas</a> | 
-        <a href="#interaccion">Contacto</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">🇨🇴 Campaña 2026</a>
+            <ul class="nav-menu">
+                <li><a href="sobre_mi.html">Sobre Mí</a></li>
+                <li><a href="propuestas.html">Propuestas</a></li>
+                <li><a href="#interaccion">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
-        <h1>Campaña Electoral 2026</h1>
-        <p>Construyendo un futuro mejor para nuestra comunidad.</p>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Construyendo un futuro mejor</h1>
+            <p>Educación gratuita · Salud accesible · Paz duradera</p>
+            <a href="#interaccion" class="btn-hero">Quiero apoyar</a>
+        </div>
     </header>
 
+
+    <section class="carrusel-section">
+        <div class="carrusel-container">
+            <div class="carrusel-slides" id="carruselSlides">
+
+                <div class="slide active">
+                    <img src="img/1.jpg" alt="Imagen 1" />
+                    <div class="slide-texto">
+                        <h3>Unidos por el cambio</h3>
+                        <p>Construyendo esperanza en cada rincón</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/2.jpg" alt="Imagen 2" />
+                    <div class="slide-texto">
+                        <h3>Educación para todos</h3>
+                        <p>El futuro comienza en las aulas</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/3.jpg" alt="Imagen 3" />
+                    <div class="slide-texto">
+                        <h3>Paz y reconciliación</h3>
+                        <p>Un país en armonía es posible</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/4.jpg" alt="Imagen 4" />
+                    <div class="slide-texto">
+                        <h3>Salud y bienestar</h3>
+                        <p>Una vida plena para todos</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/5.jpg" alt="Imagen 5" />
+                    <div class="slide-texto">
+                        <h3>Infraestructura y desarrollo</h3>
+                        <p>Construyendo un país más fuerte</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="carrusel-btn prev" id="prevBtn">❮</button>
+            <button class="carrusel-btn next" id="nextBtn">❯</button>
+
+
+            <div class="carrusel-puntos" id="carruselPuntos">
+                <span class="punto active" data-index="0"></span>
+                <span class="punto" data-index="1"></span>
+                <span class="punto" data-index="2"></span>
+                <span class="punto" data-index="3"></span>
+                <span class="punto" data-index="4"></span>
+            </div>
+        </div>
+    </section>
+
+
     <main>
-        <section id="sobre-mi">
-            <h2>Sobre el Candidato</h2>
-            <p>Comprometido con la innovación educativa, el desarrollo tecnológico y el bienestar social.</p>
+
+        <section id="sobre-mi" class="card-section">
+            <div class="card">
+                <h2>Sobre el Candidato</h2>
+                <p>
+                    Soy un líder comprometido con la transformación social.
+                    Creo firmemente que la educación gratuita hasta la universidad
+                    es la llave para romper ciclos de pobreza. He trabajado en
+                    proyectos comunitarios durante más de 10 años y hoy quiero
+                    llevar esas soluciones a todo el país.
+                </p>
+            </div>
         </section>
 
-        <section id="propuestas">
-            <h2>Propuestas Principales</h2>
-            <ul>
-                <li>Impulso a la educación digital y habilidades TI.</li>
-                <li>Transparencia y participación ciudadana.</li>
-                <li>Mejoras en la infraestructura local.</li>
-                <li>Propuesta 4: Mejorar la iluminación de los parques de la ciudad.</li>
-                <button id="btn-voluntario">Volverse Voluntario</button>
-            </ul>
+        <section id="propuestas" class="card-section">
+            <div class="card card-highlight">
+                <h2>Nuestras Propuestas</h2>
+                <div class="propuestas-grid">
+                    <div class="propuesta-item">
+                        <span class="icon">📚</span>
+                        <h3>Educación gratuita</h3>
+                        <p>Acceso universal desde el jardín hasta la universidad, con becas y material didáctico.</p>
+                    </div>
+                    <div class="propuesta-item">
+                        <span class="icon">❤️</span>
+                        <h3>Salud accesible</h3>
+                        <p>Red de centros de atención primaria y telemedicina para todos los municipios.</p>
+                    </div>
+                    <div class="propuesta-item">
+                        <span class="icon">🕊️</span>
+                        <h3>Paz y seguridad</h3>
+                        <p>Diálogo nacional, desarme voluntario y fortalecimiento de la justicia restaurativa.</p>
+                    </div>
+                </div>
+                <p class="propuestas-footer">
+                    Conoce más detalles en nuestra página de <a href="propuestas.html">propuestas completas</a>.
+                </p>
+            </div>
         </section>
 
-        <section id="interaccion">
-            <h2>Únete a Nosotros</h2>
-            <button id="btn-unirse">Quiero Apoyar</button>
+        <section id="interaccion" class="card-section">
+            <div class="card card-join">
+                <h2>Únete a Nosotros</h2>
+                <p>Tu apoyo es fundamental. Juntos podemos lograr el cambio que Colombia necesita.</p>
+                <button id="btn-unirse" class="btn-primary">Quiero Apoyar</button>
+                <p class="small-note">Al hacer clic, serás redirigido a nuestro formulario de voluntariado.</p>
+            </div>
         </section>
     </main>
 
-    <script src="script.js"></script>
 
-    <section id="propuestas-detalladas">
-        <h3>Plan de Innovación y Tecnología</h3>
-        <p>Centros digitales de aprendizaje para jóvenes.</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 Campaña Electoral Oficial. Todos los derechos reservados.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Campaña Electoral Oficial. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="#">Política de privacidad</a> |
+                <a href="https://github.com/ydiazagudelo-ops/landing-campana-remota">Contacto</a>
+            </p>
+        </div>
     </footer>
+
+
+    <script src="./script/script.js"></script>
 </body>
+
 </html>
