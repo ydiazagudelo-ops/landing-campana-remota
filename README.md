@@ -48,3 +48,13 @@ Para garantizar la correcta gobernanza del proyecto de manera individual, asumo 
 | **Desarrollador (Developer)** | Yuri Díaz | Crea las ramas de trabajo, implementa los cambios de código e interactividad en HTML/CSS/JS y documenta el progreso. |
 | **Revisor (Reviewer)** | GitHub System / Autorevisión | Valida la calidad sintáctica del código mediante GitHub Actions y audita los Pull Requests creados. |
 
+---
+
+## 🚀 DESPLIEGUE Y ENTREGABLES OFICIALES - v1.0.0
+
+A continuación se consolidan los accesos de producción para la auditoría técnica del proyecto correspondientes al primer hito de publicación estable:
+
+- **URL de Producción (GitHub Pages):** [https://ydiazagudelo-ops.github.io/landing-campana-remota/](https://ydiazagudelo-ops.github.io/landing-campana-remota/)
+- **Historial de Cambios Oficilal:** [CHANGELOG.md](./CHANGELOG.md)
+- **Etiqueta del Repositorio (Git Tag):** `v1.0.0`
+- **Publicación Oficial en Plataforma:** [GitHub Releases](https://github.com/ydiazagudelo-ops/landing-campana-remota/releases)
